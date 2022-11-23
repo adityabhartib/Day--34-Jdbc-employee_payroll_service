@@ -15,7 +15,6 @@ public class JdbcEmployeePayrollService {
                     url, username, password);
             System.out.println(
                     "Connection Established successfully");
-
             con.close(); // close connection
             System.out.println("Connection Closed....");
         } catch (SQLException | ClassNotFoundException e) {
