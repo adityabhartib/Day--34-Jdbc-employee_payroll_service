@@ -41,7 +41,6 @@ public class JdbcEmployeePayrollService {
                     String country
                             = rs.getString("Country"); // Retrieve name from db
                     System.out.println(country); // Print result on console
-
                 }
             }else{
                 int rowcount=st.getMaxRows();
