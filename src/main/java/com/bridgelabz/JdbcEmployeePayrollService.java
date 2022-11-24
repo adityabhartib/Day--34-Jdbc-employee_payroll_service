@@ -43,7 +43,7 @@ public class JdbcEmployeePayrollService {
                             = rs.getString("NetPAy"); // Retrieve name from db
                     System.out.println(PhoneNumber); // Print result on console
                     String country
-                            = rs.getString("StartDate"); // Retrieve name from db
+                            = rs.getString("StarDAte"); // Retrieve name from db
                     System.out.println(country); // Print result on console
                 }
             }else{
