@@ -15,11 +15,8 @@ public class JdbcEmployeePayrollService {
                     url, username, password);
             System.out.println(
                     "Connection Established successfully");
-            PreparedStatement st = con.prepareStatement("Select * from employee_details");
-            PreparedStatement st1 = con.prepareStatement("Update salary_details Set BasicPay=? where Salary_id=?");
+            PreparedStatement st = con.prepareStatement("Select * from salary_details");
             PreparedStatement st2= con.prepareStatement("Select * from salary_details where StartDate Between '2018-09-21' AND '2018-09-24'");
-            st1.setInt(1,3000000);
-            st1.setInt(2,5);
             boolean result = st2.execute();
             if (result) {
                 ResultSet rs = st2.getResultSet();
